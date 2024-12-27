@@ -5,7 +5,7 @@ export default function Card(props: { projectName: string, description: string, 
     const { t } = useTranslation();
     return (
         <article className={"card rounded-none bg-transparent shadow-none  md:card-side sm:max-w-full " + props.style}>
-            <figure className="relative w-full h-full md:w-2/5 h-60 shrink-0 overflow-hidden ">
+            <figure className="shadow-xl relative w-full h-full md:w-2/5 h-60 shrink-0 overflow-hidden ">
                 <img className="rounded-sm h-initial overflow-clip " src={props.imgUrl} alt="img" />
             </figure>
             <div className="card-body py-3 px-0 md:p-6 justify-between">

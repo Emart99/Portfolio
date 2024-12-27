@@ -29,7 +29,7 @@ const resources = {
          "paragraph2Middle":"along with the",
          "paragraph2Spring":" Spring ecosistem",
          "paragraph2End":", although I also really enjoy programming with",
-         "paragraph2Typescript":" Typescript. ",
+         "paragraph2Typescript":" Typescript",
          "paragraph3":"I am passionate about music, especially jazz. In my free time, I like to play my old Yamaha Pacifica 921.",
          "paragraph4":"I am a coffee enthusiast, and it always accompanies me during my programming sessions and creative moments.",
          "paragraph5":"If you're looking for a passionate programmer eager to tackle any challenge, don't hesitate to contact me.",
@@ -40,7 +40,7 @@ const resources = {
         "difficult": "A responsive floor/paint web e-commerce type application that has 6 views made for theoretical and practical purposes.",
         "inf-dsBot": "A discord bot that uses multiple api's, such as the youtube api to reproduce music, openAi to generate text and images.",
         "portfolio":"This portfolio.",
-        "metronome":"A metronome that can be used for multiple such as gaming, music, and more.",
+        "metronome":"A metronome that can be used for multiple such as gaming, music, and more. Coming Soon!",
         "codeButton": "Source Code",
       },
       "contactMe":{
@@ -103,7 +103,7 @@ const resources = {
         "difficult": "Una aplicación web de comercio electrónico de pisos/pinturas, responsiva, que tiene 6 vistas, creada con fines teóricos y prácticos.",
         "inf-dsBot": "Un bot de Discord que utiliza múltiples API's, como la API de YouTube para reproducir música, OpenAI para generar texto e imágenes.",
         "portfolio":"Este portafolio.",
-        "metronome":"Un metrónomo que se puede utilizar para múltiples fines, como juegos, música y más.",
+        "metronome":"Un metrónomo que se puede utilizar para múltiples fines, como juegos, música y más. Pronto disponible!",
         "codeButton": "Código Fuente",
       },
       "contactMe":{

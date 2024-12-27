@@ -36,14 +36,14 @@ export default function Projects() {
             description={t('projects.inf-dsBot')}
             imgUrl={infDsbotImg}
             tecnologies={[{ name: 'Java', color: 'bg-red-500', icon: 'icon-[ri--java-fill] bg-white' }, { name: 'Discord4J', color: 'bg-indigo-700', icon: 'icon-[ic--baseline-discord]' }]}
-            repoUrl='https://github.com/Emart99/iNF-dsbot'
+            repoUrl='https://github.com/Emart99/iNF-discordBot'
           />
           <Card projectName="Portfolio"
             style='intersect-once intersect:motion-preset-slide-up motion-delay-300 motion-duration-1000'
             description={t('projects.portfolio')}
             imgUrl={portfolioImg}
             tecnologies={[{ name: 'React', color: 'bg-blue-500', icon: 'icon-[mdi--react] bg-white' }, { name: 'TailwindCss', color: 'bg-blue-500', icon: 'icon-[mdi--tailwind]' }, { name: 'Flyonui', color: 'bg-violet-800', icon: 'icon-[arcticons--fly-delta]' }]}
-            repoUrl='https://github.com/Emart99/Emart99'
+            repoUrl='https://github.com/Emart99/Portfolio'
           />
           <Card projectName="Multipurpose Metronome"
             style='intersect-once intersect:motion-preset-slide-up motion-delay-400 motion-duration-1000'
