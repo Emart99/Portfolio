@@ -43,8 +43,12 @@ export default {
         dark:{
           ...require("flyonui/src/theming/themes")["luxury"],
         }
-      }
+      },
+      
+
       ],
   },
+  
+
   
 };

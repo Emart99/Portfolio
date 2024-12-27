@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { themeChange } from 'theme-change'
-themeChange()
-export default function Navbar() {
+
+
+export default function Navbar({switchTheme}: {switchTheme: () => void}) {
   const [isSticky, setIsSticky] = useState(false);
-  const {t , i18n} = useTranslation()
+  const { t, i18n } = useTranslation()
   const [currentLenguaje, setCurrentLenguaje] = useState(i18n.language)
-  
+
   const handleLenguaje = () => {
     const newLenguage = currentLenguaje === 'en' ? 'es' : 'en'
     i18n.changeLanguage(newLenguage)
@@ -61,27 +61,27 @@ export default function Navbar() {
               <li><a className="dropdown-item" href="#contact">{t('menu.about')}</a></li>
             </ul>
             <li className="dropdown relative [--offset:9] [--placement:bottom-end] max-sm:[--placement:bottom]">
-            <button
-              id="dropdown-js-components"
-              className="dropdown-toggle dropdown-item dropdown-open:bg-base-content/10 dropdown-open:text-base-content justify-between"
-              aria-haspopup="menu"
-              aria-expanded="false"
-              aria-label="Dropdown"
-            >
-              {t('menu.languaje')}
-              <span className="icon-[tabler--chevron-down] dropdown-open:rotate-180 size-4 rtl:rotate-180"></span>
-            </button>
-            <ul
-              className="dropdown-menu dropdown-open:opacity-100 hidden"
-              role="menu"
-              aria-orientation="vertical"
-              aria-labelledby="js-components"
-            >
-              <button className='dropdown-item' type='submit' key='lenguajes' onClick={handleLenguaje}>
-                  {t('menu.inverseLenguaje')}
+              <button
+                id="dropdown-js-components"
+                className="dropdown-toggle dropdown-item dropdown-open:bg-base-content/10 dropdown-open:text-base-content justify-between"
+                aria-haspopup="menu"
+                aria-expanded="false"
+                aria-label="Dropdown"
+              >
+                {t('menu.languaje')}
+                <span className="icon-[tabler--chevron-down] dropdown-open:rotate-180 size-4 rtl:rotate-180"></span>
               </button>
-            </ul>
-          </li>
+              <ul
+                className="dropdown-menu dropdown-open:opacity-100 hidden"
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="js-components"
+              >
+                <button className='dropdown-item' type='submit' key='lenguajes' onClick={handleLenguaje}>
+                  {t('menu.inverseLenguaje')}
+                </button>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
@@ -109,7 +109,7 @@ export default function Navbar() {
               aria-labelledby="js-components"
             >
               <button className='dropdown-item' type='submit' key='lenguajes' onClick={handleLenguaje}>
-                  {t('menu.inverseLenguaje')}
+                {t('menu.inverseLenguaje')}
               </button>
             </ul>
           </li>
@@ -120,7 +120,7 @@ export default function Navbar() {
 
 
         <label className="swap swap-rotate">
-          <input type="checkbox" data-toggle-theme="dark,light" className="theme-controller" />
+            <input type="checkbox" onClick={switchTheme} className="theme-controller" />
           <span className="bg-primary swap-off icon-[fluent--drink-coffee-16-filled] size-7"></span>
           <span className="swap-on icon-[fluent--drink-coffee-16-filled] size-7"></span>
         </label>
