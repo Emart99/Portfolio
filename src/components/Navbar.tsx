@@ -120,7 +120,7 @@ export default function Navbar() {
 
 
         <label className="swap swap-rotate">
-          <input type="checkbox" data-toggle-theme="luxury" className="theme-controller" />
+          <input type="checkbox" data-toggle-theme="dark,light" className="theme-controller" />
           <span className="bg-primary swap-off icon-[fluent--drink-coffee-16-filled] size-7"></span>
           <span className="swap-on icon-[fluent--drink-coffee-16-filled] size-7"></span>
         </label>

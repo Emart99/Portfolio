@@ -27,7 +27,7 @@ export default {
     themes: [
         
       {
-        lightCoffee:{
+        light:{
           primary:'#61504B',
           secondary:'#AB9A8C',
           accent:'#766158',
@@ -38,7 +38,12 @@ export default {
 
         }
       },
-      "luxury"
+      "luxury",
+      {
+        dark:{
+          ...require("flyonui/src/theming/themes")["luxury"],
+        }
+      }
       ],
   },
   
