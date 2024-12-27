@@ -5,26 +5,23 @@ import ContactMeModal from "./ContactMeModal";
 export default function Contact() {
     const { t } = useTranslation()
     return (
-        <section id="contact" className="contact flex items-center ">
-            <div className="mx-auto max-w-7xl md:px-4 ">
-                <div className="mb-4">
-                    <div className="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
-                    </div>
-                </div>
-                <div className="flex items-start md:items-stretch justify-center">
+        <section id="contact" className="contact lg:flex lg:items-center md:pl-8">
+            <div className="mx-0  lg:mx-auto  max-w-7xl px-4 sm:px-5 lg:px-8">
+                <h2 className="font-heading mb-24 font-bold tracking-tight text-center lg:text-start text-5xl ">
+                    {t('contactMe.title')}
+                </h2>
+                <div className="flex items-start md:items-stretch justify-center  ">
                     <div className="grid lg:grid-cols-2">
-                        <div className="content-baseline lg:content-baseline h-full w-full md:w-[50vw]">
+                        <div className="content-baseline  h-full w-full md:w-[50vw]">
                             <ul className="mb-6 md:mb-0">
-                                <h2 className="font-heading mb-28 font-bold tracking-tight text-center lg:text-start text-5xl ">
-                                    {t('contactMe.title')}
-                                </h2>
+
                                 <li className="flex mb-2">
                                     <div className="flex h-10 w-10 items-center gap-y-3 justify-center rounded bg-base-100">
                                         <span className="icon-[mdi--contact] size-7 bg-primary"></span>
                                     </div>
                                     <div className="ml-4 mb-4">
                                         <h5 className="text-xl">
-                                        {t('contactMe.mobile')}
+                                            {t('contactMe.mobile')}
                                         </h5>
                                         <p>
                                             +54 11-3771-0208
@@ -76,7 +73,7 @@ export default function Contact() {
                                     </div>
                                     <div className="ml-4 mb-4">
                                         <h5 className="text-xl">
-                                        {t('contactMe.location')}
+                                            {t('contactMe.location')}
                                         </h5>
                                         <p>
                                             Buenos Aires, Argentina
@@ -96,7 +93,7 @@ export default function Contact() {
                             </ul>
                         </div>
 
-                        <div className="h-fit max-w-6xl p-5 md:px-4  card rounded-none hidden lg:block py-20 intersect:motion-preset-slide-left motion-duration-1500 intersect-once" id="form">
+                        <div className=" max-w-6xl hidden lg:block  intersect:motion-preset-slide-left motion-duration-1500 intersect-once" id="form">
                             <ContactForm />
                         </div>
                     </div>

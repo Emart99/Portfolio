@@ -40,13 +40,13 @@ export default function Navbar({switchTheme}: {switchTheme: () => void}) {
           <button
             id="dropdown-default"
             type="button"
-            className="dropdown-toggle btn btn-outline btn-secondary btn-square"
+            className="dropdown-toggle btn btn-text btn-primary btn-square"
             aria-haspopup="menu"
             aria-expanded="false"
             aria-label="Dropdown"
           >
-            <span className="icon-[tabler--menu-2] dropdown-open:hidden size-5"></span>
-            <span className="icon-[tabler--x] dropdown-open:block hidden size-5"></span>
+            <span className="icon-[tabler--menu-2] dropdown-open:hidden size-6"></span>
+            <span className="icon-[tabler--x] dropdown-open:block hidden size-6"></span>
           </button>
           <ul
             className="dropdown-menu dropdown-open:opacity-100 hidden min-w-60"
@@ -58,7 +58,7 @@ export default function Navbar({switchTheme}: {switchTheme: () => void}) {
               <li><a className="dropdown-item" href="#home">{t('menu.home')}</a></li>
               <li><a className="dropdown-item" href="#aboutme">{t('menu.about')}</a></li>
               <li><a className="dropdown-item" href="#projects">{t('menu.projects')}</a></li>
-              <li><a className="dropdown-item" href="#contact">{t('menu.about')}</a></li>
+              <li><a className="dropdown-item" href="#contact">{t('menu.contact')}</a></li>
             </ul>
             <li className="dropdown relative [--offset:9] [--placement:bottom-end] max-sm:[--placement:bottom]">
               <button
@@ -90,7 +90,7 @@ export default function Navbar({switchTheme}: {switchTheme: () => void}) {
           <li><a className="dropdown-item" href="#home">{t('menu.home')}</a></li>
           <li><a className="dropdown-item" href="#aboutme">{t('menu.about')}</a></li>
           <li><a className="dropdown-item" href="#projects">{t('menu.projects')}</a></li>
-          <li><a className="dropdown-item" href="#contact">{t('menu.about')}</a></li>
+          <li><a className="dropdown-item" href="#contact">{t('menu.contact')}</a></li>
           <li className="dropdown relative [--offset:9] [--placement:bottom-end] max-sm:[--placement:bottom]">
             <button
               id="dropdown-js-components"
