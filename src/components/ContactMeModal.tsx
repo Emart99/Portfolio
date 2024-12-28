@@ -4,7 +4,7 @@ export default function ContactMeModal() {
   
   return (
     <>
-      <div id="fullscreen-modal" className="overlay modal overlay-open:opacity-100 hidden p-0" role="dialog" tabIndex={-1}>
+      <div id="fullscreen-modal" className="overlay modal overlay-open:opacity-100 hidden p-0 overflow-x-hidden overflow-y-auto" role="dialog" tabIndex={-1}>
         <div className="modal-dialog overlay-open:opacity-100 max-w-none  ">
           <div className="modal-content h-full max-h-none justify-between rounded-none">
             <div className="modal-header">
