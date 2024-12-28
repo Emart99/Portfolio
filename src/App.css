@@ -19,7 +19,7 @@
     min-height: 85vh;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
     .hero{
         min-height: auto;
     }
@@ -27,6 +27,10 @@
         min-height: auto;
     }
     .contact{
+        min-height: auto;
+        margin-bottom: 2rem;
+    }
+    .about-me{
         min-height: auto;
     }
     
