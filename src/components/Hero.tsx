@@ -52,7 +52,6 @@ export default function Hero() {
                                 <img src={coffeeHero} alt="Dashboard image" className="rounded-l-3xl object-cover  h-auto lg:h-[767px]" />
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
