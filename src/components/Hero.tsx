@@ -22,7 +22,7 @@ export default function Hero() {
             <div
                 className="rounded-2xl py-10 overflow-hidden p-5 lg:m-0 2xl:py-16 xl:py-8  lg:rounded-tl-2xl lg:rounded-bl-2xl ">
                 <div className="mx-auto pt-10 max-w-7xl px-4 sm:px-5 lg:px-8">
-                    <div className="motion-preset-slide-up motion-duration-1500 motion-delay-[400ms]  h-full grid grid-cols-1 gap-14 items-center lg:grid-cols-12 lg:gap32">
+                    <div className="motion-preset-slide-up motion-duration-1500 motion-delay-[400ms] grid grid-cols-1 gap-14 items-center lg:grid-cols-12 lg:gap32">
                         <div className="w-full xl:col-span-5 lg:col-span-6 2xl:-mx-5 xl:-mx-0 text-base">
                             <p className="text-3xl text-center lg:text-left ">
                                 Ezequiel Martino
@@ -48,8 +48,8 @@ export default function Hero() {
                             </div>
                         </div>
                         <div className="w-full xl:col-span-7  lg:col-span-6 block">
-                            <div className="w-full  sm:w-auto lg:w-[76rem] xl:ml-16">
-                                <img src={coffeeHero} alt="Dashboard image" className="rounded-l-3xl object-cover w-full  lg:h-auto " />
+                            <div className="w-full  sm:w-auto lg:w-[76rem] xl:ml-16 ">
+                                <img src={coffeeHero} alt="Dashboard image" className="rounded-l-3xl object-cover  h-auto lg:h-[767px]" />
                             </div>
                         </div>
 
