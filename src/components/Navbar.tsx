@@ -34,7 +34,7 @@ export default function Navbar({switchTheme}: {switchTheme: () => void}) {
   }, []);
 
   return (
-    <nav className={`navbar fixed top-0 z-[9] backdrop-blur  ${isSticky ? 'shadow bg-base-200/50' : 'bg-transparent'}`}>
+    <nav className={`navbar fixed top-0 z-[9] min-h-[6vh] backdrop-blur  ${isSticky ? 'shadow bg-base-200/50' : 'bg-transparent'}`}>
       <div className="navbar-start">
         <div className="dropdown relative inline-flex sm:hidden rtl:[--placement:bottom-end]">
           <button

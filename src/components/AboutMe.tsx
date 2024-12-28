@@ -3,9 +3,9 @@ import { useTranslation } from "react-i18next";
 export default function AboutMe() {
   const { t } = useTranslation();
   return (
-    <section id="aboutme" className="about-me md:pl-8">
-      <div className="mx-auto max-w-7xl px-4 sm:px-5 lg:px-8">
-        <h2 className="pt-16 font-heading mb-24 font-bold tracking-tight text-center lg:text-start text-5xl ">{t("aboutMe.title")}</h2>
+    <section id="aboutme" className="about-me md:pl-8 md:mb-16">
+      <div className="mx-auto max-w-7xl px-4 sm:px-5 lg:px-8 ">
+        <h2 className=" font-heading mb-24 font-bold tracking-tight text-center lg:text-start text-5xl pt-16">{t("aboutMe.title")}</h2>
         <div className="container mx-auto">
           <div className="flex flex-col-reverse md:flex-row">
             <div className="md:max-h-96 md:h-screen m-auto mb-10 md:m-0 w-full md:w-1/3 intersect:motion-preset-slide-right motion-duration-1000 motion-delay-[200ms] intersect-once">
