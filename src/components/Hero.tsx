@@ -6,9 +6,9 @@ export default function Hero() {
     
     const getCurrentCvLenguaje = () => {
         if (i18n.language === "es") {
-            return ("https://drive.google.com/file/d/1VCbL_cnYf-aYwT4m08whIVuUXNjVObcU/view")
+            return ("https://drive.google.com/file/d/1D9ny4MkBZt0YAv2UfSYpe_UnGovERMym/view")
         } else {
-            return ("https://drive.google.com/file/d/1HKLSDtV8yMQJHmZQVMpEimBQHM03IY1X/view")
+            return ("https://drive.google.com/file/d/1v_2p1xKEqY_KP5f-buN0zywGgh_w80_E/view")
         }
     }
 

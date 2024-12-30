@@ -34,7 +34,7 @@ export default {
           neutral:'#2A2220',
           "base-100":'#EDEAE7',
           "base-200":'#E2DDD7',
-          fontFamily: 'Archivo'
+          fontFamily: 'Inter'
 
         }
       },
@@ -42,6 +42,7 @@ export default {
       {
         dark:{
           ...require("flyonui/src/theming/themes")["luxury"],
+          fontFamily: 'Inter'
         }
       },
       
