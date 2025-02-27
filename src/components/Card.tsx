@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { tecnologie } from "../interfaces/tecnologies"
 
-export default function Card(props: { projectName: string, description: string, imgUrl: string, tecnologies: tecnologie[], repoUrl: string, style:string }) {
+export default function Card(props: { projectName: string, description: string, imgUrl: string, tecnologies: tecnologie[], repoUrl: string, style:string,buttonIcon:string ,buttonText: string}) {
     const { t } = useTranslation();
     return (
         <article className={"card rounded-none bg-transparent shadow-none  md:card-side sm:max-w-full " + props.style}>
@@ -22,7 +22,7 @@ export default function Card(props: { projectName: string, description: string, 
                 </div>
                 <p className="mt-2">{props.description}</p>
                 <div className="card-actions mt-4">
-                    <a target="_blank" href={props.repoUrl} className="md:w-fit btn btn-outline btn-primary rounded-none"><span className="icon-[line-md--github]"></span> {t('projects.codeButton')}</a>
+                    <a target="_blank" href={props.repoUrl} className="md:w-fit btn btn-outline btn-primary rounded-none"><span className={props.buttonIcon}></span> {props.buttonText}</a>
                 </div>
             </div>
         </article>
