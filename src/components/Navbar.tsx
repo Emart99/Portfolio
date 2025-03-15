@@ -32,6 +32,14 @@ export default function Navbar({switchTheme}: {switchTheme: () => void}) {
     };
 
   }, []);
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+    
+};
+
 
   return (
     <nav className={`navbar fixed top-0 z-[9] backdrop-blur  ${isSticky ? 'shadow bg-base-200/50' : 'bg-transparent'}`}>
@@ -44,6 +52,7 @@ export default function Navbar({switchTheme}: {switchTheme: () => void}) {
             aria-haspopup="menu"
             aria-expanded="false"
             aria-label="Dropdown"
+            
           >
             <span className="icon-[tabler--menu-2] dropdown-open:hidden size-6"></span>
             <span className="icon-[tabler--x] dropdown-open:block hidden size-6"></span>
@@ -55,10 +64,10 @@ export default function Navbar({switchTheme}: {switchTheme: () => void}) {
             aria-labelledby="dropdown-default"
           >
             <ul className="dropdown relative [--offset:9] [--placement:bottom-end] max-sm:[--placement:bottom]">
-              <li><a className="dropdown-item" href="#home">{t('menu.home')}</a></li>
-              <li><a className="dropdown-item" href="#aboutme">{t('menu.about')}</a></li>
-              <li><a className="dropdown-item" href="#projects">{t('menu.projects')}</a></li>
-              <li><a className="dropdown-item" href="#contact">{t('menu.contact')}</a></li>
+              <li><a className="dropdown-item" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }} >{t('menu.home')}</a></li>
+              <li><a className="dropdown-item" onClick={(e) => { e.preventDefault(); scrollToSection('aboutme'); }} >{t('menu.about')}</a></li>
+              <li><a className="dropdown-item" onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }} >{t('menu.projects')}</a></li>
+              <li><a className="dropdown-item" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }} >{t('menu.contact')}</a></li>
             </ul>
             <li className="dropdown relative [--offset:9] [--placement:bottom-end] max-sm:[--placement:bottom]">
               <button
@@ -87,10 +96,10 @@ export default function Navbar({switchTheme}: {switchTheme: () => void}) {
       </div>
       <div className="navbar-center max-sm:hidden">
         <ul className="menu font-medium menu-horizontal gap-1 p-0 text-base rtl:ml-20 bg-transparent">
-          <li><a className="dropdown-item" href="#home">{t('menu.home')}</a></li>
-          <li><a className="dropdown-item" href="#aboutme">{t('menu.about')}</a></li>
-          <li><a className="dropdown-item" href="#projects">{t('menu.projects')}</a></li>
-          <li><a className="dropdown-item" href="#contact">{t('menu.contact')}</a></li>
+          <li><a className="dropdown-item" onClick={(e) => { e.preventDefault(); scrollToSection('home')}} >{t('menu.home')}</a></li>
+          <li><a className="dropdown-item" onClick={(e) => { e.preventDefault(); scrollToSection('aboutme')}}>{t('menu.about')}</a></li>
+          <li><a className="dropdown-item" onClick={(e) => { e.preventDefault(); scrollToSection('projects')}}>{t('menu.projects')}</a></li>
+          <li><a className="dropdown-item" onClick={(e) => { e.preventDefault(); scrollToSection('contact')}}>{t('menu.contact')}</a></li>
           <li className="dropdown relative [--offset:9] [--placement:bottom-end] max-sm:[--placement:bottom]">
             <button
               id="dropdown-js-components"
