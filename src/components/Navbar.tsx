@@ -32,7 +32,7 @@ export default function Navbar({switchTheme}: {switchTheme: () => void}) {
     };
 
   }, []);
-  const scrollToSection = (id) => {
+  const scrollToSection = (id:string) => {
     const element = document.getElementById(id);
     if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
