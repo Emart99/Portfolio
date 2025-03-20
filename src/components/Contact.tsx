@@ -32,40 +32,43 @@ export default function Contact() {
                                     <div className="flex h-10 w-10 items-center gap-y-3 justify-center rounded bg-base-100">
                                         <span className="icon-[ic--sharp-email] bg-primary size-7"></span>
                                     </div>
-                                    <div className="ml-4 mb-4">
+                                    <a className="ml-4 mb-4">
                                         <h5 className="text-xl">
                                             Mail
                                         </h5>
                                         <p>
                                             ezequielmartino1999@gmail.com
                                         </p>
-                                    </div>
+                                    </a>
                                 </li>
                                 <li className="flex mb-2">
                                     <div className="flex h-10 w-10 items-center gap-y-3 justify-center rounded bg-base-100">
                                         <span className="icon-[mdi--github] bg-primary size-7"></span>
                                     </div>
-                                    <div className="ml-4 mb-4">
+                                    <a href="https://www.github.com/Emart99" target="_blank" className="ml-4 mb-4">
                                         <h5 className="text-xl">
                                             Github
                                         </h5>
                                         <p>
                                             github.com/Emart99
                                         </p>
-                                    </div>
+                                    </a>
                                 </li>
                                 <li className="flex mb-2">
+                                    <a>
+                                        
+                                    </a>
                                     <div className="flex h-10 w-10 items-center gap-y-3 justify-center rounded bg-base-100">
                                         <span className="icon-[uil--linkedin] bg-primary size-7"></span>
                                     </div>
-                                    <div className="ml-4 mb-4">
+                                    <a href="https://www.linkedin.com/in/martino-ezequiel/" target="_blank" className="ml-4 mb-4">
                                         <h5 className="text-xl">
                                             LinkedIn
                                         </h5>
                                         <p>
                                             linkedin.com/in/martino-ezequiel/
                                         </p>
-                                    </div>
+                                    </a>
                                 </li>
                                 <li className="flex mb-10 lg:mb-0">
                                     <div className="flex h-10 w-10 items-center gap-y-3 justify-center rounded bg-base-100">

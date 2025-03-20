@@ -34,7 +34,7 @@ function App() {
 
   return (
     <ObserverProvider> 
-    <div className={`min-h-screen ${theme === 'dark' ? 'bg-base-200/60' : ''} `} data-theme={theme}>
+    <div className={`min-h-screen ${theme === 'dark' ? 'bg-base-200' : ''} `} data-theme={theme}>
         <Routes>
           <Route path="/" element={<Home switchTheme={switchTheme}/>} />
         </Routes>
