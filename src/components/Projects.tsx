@@ -6,6 +6,7 @@ import rampAppImg from '../images/rampapp.webp'
 import infDsbotImg from '../images/dsbot.webp'
 import portfolioImg from '../images/portfolio.webp'
 import metronomeImg from '../images/metronome.webp'
+import challengeImg from "../images/challenge.webp"
 
 export default function Projects() {
   const { t } = useTranslation()
@@ -59,6 +60,15 @@ export default function Projects() {
             imgUrl={metronomeImg}
             tecnologies={[{ name: 'React', color: 'bg-black', icon: 'icon-[mdi--react] bg-white' }, { name: 'TailwindCss', color: 'bg-blue-500', icon: 'icon-[mdi--tailwind]' },]}
             repoUrl='https://coolmetronome.netlify.app/'
+            buttonText="Link"
+            buttonIcon="icon-[line-md--link]"
+          />
+          <Card projectName="Challenge-Frontend"
+            style='intersect-once intersect:motion-preset-slide-up motion-delay-[800ms] motion-duration-1000'
+            description={t('projects.challenge')}
+            imgUrl={challengeImg}
+            tecnologies={[{ name: 'React', color: 'bg-black', icon: 'icon-[mdi--react] bg-white' }, { name: 'TailwindCss', color: 'bg-blue-500', icon: 'icon-[mdi--tailwind]' },]}
+            repoUrl='https://simulador-comisiones.netlify.app/'
             buttonText="Link"
             buttonIcon="icon-[line-md--link]"
           />

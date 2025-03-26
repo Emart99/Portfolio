@@ -40,8 +40,10 @@ const resources = {
         "difficult": "A responsive floor/paint web e-commerce type application that has 6 views made for theoretical and practical purposes.",
         "inf-dsBot": "A discord bot that uses multiple api's, such as the youtube api to reproduce music, openAi to generate text and images.",
         "portfolio":"This portfolio.",
+        "challenge":"A mobile view dashboard made for an online challenge, completed in one week.",
         "metronome":"A metronome that can be used for multiple such as gaming, music, and more. Coming Soon!",
         "codeButton": "Source Code",
+        
       },
       "contactMe":{
          "title":"Let's get in touch",
@@ -103,6 +105,7 @@ const resources = {
         "difficult": "Una aplicación web de comercio electrónico de pisos/pinturas, responsiva, que tiene 6 vistas, creada con fines teóricos y prácticos.",
         "inf-dsBot": "Un bot de Discord que utiliza múltiples API's, como la API de YouTube para reproducir música, OpenAI para generar texto e imágenes.",
         "portfolio":"Este portafolio.",
+        "challenge":"Una vista mobile de un dashboard hecho para un challenge, completado en una semana.",
         "metronome":"Un metrónomo que se puede utilizar para múltiples fines, como juegos, música y más. Pronto disponible!",
         "codeButton": "Código Fuente",
       },
