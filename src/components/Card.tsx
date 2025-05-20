@@ -1,6 +1,20 @@
 import { tecnologie } from "../interfaces/tecnologies"
 
-export default function Card(props: { projectName: string, description: string, imgUrl: string, tecnologies: tecnologie[], repoUrl: string, style:string,buttonIcon:string ,buttonText: string}) {
+export default function Card(props: {
+    projectName: string,
+    description: string,
+    imgUrl: string,
+    tecnologies: tecnologie[],
+    repoUrl: string,
+    style: string,
+    buttonIcon: string,
+    buttonText: string
+    buttonText2?: string,
+    buttonLink2?: string,
+    buttonIcon2?:string
+    repoUrl2?:string
+
+}) {
 
     return (
         <article className={"card rounded-none bg-transparent shadow-none  md:card-side sm:max-w-full " + props.style}>
@@ -20,9 +34,18 @@ export default function Card(props: { projectName: string, description: string, 
                     })}
                 </div>
                 <p className="mt-2">{props.description}</p>
-                <div className="card-actions mt-4">
-                    <a target="_blank" href={props.repoUrl} className="md:w-fit btn btn-outline btn-primary rounded-none"><span className={props.buttonIcon}></span> {props.buttonText}</a>
+                <div className="flex gap-2">
+                    {props.buttonText2 ?
+                        <div className="card-actions mt-4">
+                            <a target="_blank" href={props.repoUrl2} className="md:w-fit btn btn-outline btn-primary rounded-none"><span className={props.buttonIcon2}></span> {props.buttonText2}</a>
+                        </div>
+                        : <></>}
+                    <div className="card-actions mt-4">
+                        <a target="_blank" href={props.repoUrl} className="md:w-fit btn btn-outline btn-primary rounded-none"><span className={props.buttonIcon}></span> {props.buttonText}</a>
+                    </div>
                 </div>
+
+
             </div>
         </article>
 

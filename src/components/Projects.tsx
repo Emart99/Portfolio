@@ -7,6 +7,7 @@ import infDsbotImg from '../images/dsbot.webp'
 import portfolioImg from '../images/portfolio.webp'
 import metronomeImg from '../images/metronome.webp'
 import challengeImg from "../images/challenge.webp"
+import microserviceInitializrImg from "../images/microservice-initializr.webp"
 
 export default function Projects() {
   const { t } = useTranslation()
@@ -71,6 +72,21 @@ export default function Projects() {
             repoUrl='https://simulador-comisiones.netlify.app/'
             buttonText="Link"
             buttonIcon="icon-[line-md--link]"
+            buttonText2={t('projects.codeButton')}
+            buttonIcon2="icon-[line-md--github]"
+            repoUrl2="https://github.com/Emart99/desafio-sinergia-creativa"
+          />
+          <Card projectName="Spring Microservice Initializr"
+            style='intersect-once intersect:motion-preset-slide-up motion-delay-[800ms] motion-duration-1000'
+            description={t('projects.spring-microservice')}
+            imgUrl={microserviceInitializrImg}
+            tecnologies={[{ name: 'React', color: 'bg-black', icon: 'icon-[mdi--react] bg-white' }, { name: 'TailwindCss', color: 'bg-blue-500', icon: 'icon-[mdi--tailwind]' },{ name: 'Java', color: 'bg-red-500', icon: 'icon-[ri--java-fill]' }, { name: 'SpringBoot', color: 'bg-green-500', icon: 'icon-[simple-icons--springboot]'},]}
+            repoUrl='https://spring-microservice-initializr.netlify.app/'
+            buttonIcon="icon-[line-md--link]"
+            buttonText="Link"
+            buttonText2={t('projects.codeButton')}
+            buttonIcon2="icon-[line-md--github]"
+            repoUrl2="https://github.com/Emart99/microservice-initializr"
           />
         </div>
       </div>

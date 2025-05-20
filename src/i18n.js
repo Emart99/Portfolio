@@ -41,8 +41,9 @@ const resources = {
         "inf-dsBot": "A discord bot that uses multiple api's, such as the youtube api to reproduce music, openAi to generate text and images.",
         "portfolio":"This portfolio.",
         "challenge":"A mobile view dashboard made for an online challenge, completed in one week.",
-        "metronome":"A metronome that can be used for multiple such as gaming, music, and more. Coming Soon!",
+        "metronome":"A metronome that can be used for multiple such as gaming, music, and more.",
         "codeButton": "Source Code",
+        "spring-microservice":"A node based ui that will eventually let you create your microservice architecture. Work in progress",
         
       },
       "contactMe":{
@@ -108,6 +109,7 @@ const resources = {
         "challenge":"Una vista mobile de un dashboard hecho para un challenge, completado en una semana.",
         "metronome":"Un metrónomo que se puede utilizar para múltiples fines, como juegos, música y más. Pronto disponible!",
         "codeButton": "Código Fuente",
+        "spring-microservice":"Una ui basada en nodos que eventualmente te permitira crear tu arquitectura de microservicios. Work in progress",
       },
       "contactMe":{
          "title":"Contactemos",
