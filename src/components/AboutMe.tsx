@@ -3,8 +3,8 @@ import { useTranslation } from "react-i18next";
 export default function AboutMe() {
   const { t } = useTranslation();
   return (
-    <section id="aboutme" className="about-me md:pl-8 md:mb-16">
-      <div className="mx-auto max-w-7xl px-4 sm:px-5 lg:px-8 ">
+    <section id="aboutme" className="about-me md:mb-16">
+      <div className="mx-auto max-w-7xl px-4 sm:px-5 lg:px-10">
         <h2 className=" font-heading mb-24 font-bold tracking-tight text-center lg:text-start text-5xl pt-16">{t("aboutMe.title")}</h2>
         <div className="container mx-auto">
           <div className="flex flex-col-reverse md:flex-row">
@@ -12,7 +12,7 @@ export default function AboutMe() {
               <img className=" object-cover object-top" src="https://images.vexels.com/media/users/3/236530/isolated/preview/74e3e0a5c7251f04df9b313cb2407a49-semi-flat-baritone-saxophone.png" alt="" />
             </div>
             <div className="flex order-1 md:order-2 w-full md:w-2/3 intersect:motion-preset-slide-left motion-duration-1500 motion-delay-[400ms] intersect-once">
-              <div className="mb-auto mt-auto text-lg m-auto">
+              <div className="mb-auto mt-auto text-xl m-auto">
                 <p className="pb-4">{t('aboutMe.paragraph1Start')} 
                   <span className="text-primary"> {t('aboutMe.paragraph1Accent')}</span>
                   {t('aboutMe.paragraph1End')}.

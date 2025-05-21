@@ -95,7 +95,7 @@ export default function Navbar({switchTheme}: {switchTheme: () => void}) {
         </div>
       </div>
       <div className="navbar-center max-sm:hidden">
-        <ul className="menu font-medium menu-horizontal gap-1 p-0 text-base rtl:ml-20 bg-transparent">
+        <ul className="menu font-medium menu-horizontal gap-1 p-0 text-base rtl:ml-20 bg-transparent text-xl">
           <li><a className="dropdown-item" onClick={(e) => { e.preventDefault(); scrollToSection('home')}} >{t('menu.home')}</a></li>
           <li><a className="dropdown-item" onClick={(e) => { e.preventDefault(); scrollToSection('aboutme')}}>{t('menu.about')}</a></li>
           <li><a className="dropdown-item" onClick={(e) => { e.preventDefault(); scrollToSection('projects')}}>{t('menu.projects')}</a></li>

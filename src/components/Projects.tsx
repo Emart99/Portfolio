@@ -14,8 +14,8 @@ export default function Projects() {
   
 
   return (
-    <section id="projects" className="proyects md:pl-8 ">
-      <div className="mx-auto max-w-7xl px-4 sm:px-5 lg:px-8">
+    <section id="projects" className="proyects">
+      <div className="mx-auto max-w-7xl px-4 sm:px-5 lg:px-10">
         <h2 className="pt-16 font-heading mb-24 font-bold tracking-tight text-center lg:text-start text-5xl ">{t('projects.title')}</h2>
         <div className="pb-16 gap-y-4 flex flex-col gap-y-16">
           <Card 

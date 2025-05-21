@@ -14,14 +14,14 @@ export default function Hero() {
 
 
     return (
-        <section id="home" className="pt-0 lg:pl-8 hero">
+        <section id="home" className="pt-0 hero">
             <div className="absolute top-0 -z-10 h-full  ">
                 <div className="absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[80px]">
                 </div>
             </div>
             <div
                 className="rounded-2xl py-10 overflow-hidden p-5 lg:m-0 2xl:py-16 xl:py-8  lg:rounded-tl-2xl lg:rounded-bl-2xl ">
-                <div className="mx-auto pt-10 max-w-7xl px-4 sm:px-5 lg:px-8">
+                <div className="mx-auto pt-10 max-w-7xl px-4 sm:px-5 lg:px-10">
                     <div className="motion-preset-slide-up motion-duration-1500 motion-delay-[400ms] grid grid-cols-1 gap-14 items-center lg:grid-cols-12 lg:gap32">
                         <div className="w-full xl:col-span-5 lg:col-span-6 2xl:-mx-5 xl:-mx-0 text-base">
                             <p className="text-3xl text-center lg:text-left ">

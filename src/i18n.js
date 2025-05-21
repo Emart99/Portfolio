@@ -63,7 +63,7 @@ const resources = {
          "messageError":"Please enter your message",
       },
       "footer":{
-        "text":'Copyright © 2024 - Made by Ezequiel Martino.'
+        "text":'Copyright © 2025 - Made by Ezequiel Martino.'
       },
       "toast":{
         "success":"Message sent successfully!",
@@ -128,7 +128,7 @@ const resources = {
          "messageError":"Por favor ingrese su mensaje",
       },
       "footer":{
-        "text":'Copyright © 2024 - Hecho por Ezequiel Martino.'
+        "text":'Copyright © 2025 - Hecho por Ezequiel Martino.'
       },
       "toast":{
         "success":"Mensaje enviado correctamente!",
