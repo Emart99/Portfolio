@@ -8,10 +8,10 @@ export default function AboutMe() {
         <h2 className=" font-heading mb-24 font-bold tracking-tight text-center lg:text-start text-5xl pt-16">{t("aboutMe.title")}</h2>
         <div className="container mx-auto">
           <div className="flex flex-col-reverse md:flex-row">
-            <div className="md:max-h-96 md:h-screen m-auto mb-10 md:m-0 w-full md:w-1/3 intersect:motion-preset-slide-right motion-duration-1000 motion-delay-[200ms] intersect-once">
+            <div className="md:max-h-96 md:h-screen m-auto mb-10 md:m-0 w-full md:w-1/3 md:intersect:motion-preset-slide-right md:motion-duration-1000 md:motion-delay-[200ms] md:intersect-once">
               <img className=" object-cover object-top" src="https://images.vexels.com/media/users/3/236530/isolated/preview/74e3e0a5c7251f04df9b313cb2407a49-semi-flat-baritone-saxophone.png" alt="" />
             </div>
-            <div className="flex order-1 md:order-2 w-full md:w-2/3 intersect:motion-preset-slide-left motion-duration-1500 motion-delay-[400ms] intersect-once">
+            <div className="flex order-1 md:order-2 w-full md:w-2/3 md:intersect:motion-preset-slide-left md:motion-duration-1500 md:motion-delay-[400ms] md:intersect-once">
               <div className="mb-auto mt-auto text-xl m-auto">
                 <p className="pb-4">{t('aboutMe.paragraph1Start')} 
                   <span className="text-primary"> {t('aboutMe.paragraph1Accent')}</span>
