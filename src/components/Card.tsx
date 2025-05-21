@@ -40,11 +40,11 @@ export default function Card(props: {
                 <div className="flex gap-2">
                     {props.buttonText2 ?
                         <div className="card-actions mt-4">
-                            <a target="_blank" href={props.repoUrl2} className=" text-xl md:w-fit btn btn-outline btn-primary rounded-none"><span className={props.buttonIcon2}></span> {props.buttonText2}</a>
+                            <a target="_blank" href={props.repoUrl2} className=" text-lg md:w-fit btn btn-outline btn-primary rounded-none"><span className={props.buttonIcon2}></span> {props.buttonText2}</a>
                         </div>
                         : <></>}
                     <div className="card-actions mt-4">
-                        <a target="_blank" href={props.repoUrl} className=" text-xl md:w-fit btn btn-outline btn-primary rounded-none"><span className={props.buttonIcon}></span> {props.buttonText}</a>
+                        <a target="_blank" href={props.repoUrl} className=" text-lg md:w-fit btn btn-outline btn-primary rounded-none"><span className={props.buttonIcon}></span> {props.buttonText}</a>
                     </div>
                 </div>
 

@@ -42,7 +42,7 @@ export default function Hero() {
                                 </a>
                             </div>
                             <div className="w-full flex justify-center lg:justify-normal md:justify-center sm:justify-center">
-                                <a href={getCurrentCvLenguaje()} target="_blank" className="no-animation rounded-none btn btn-outline btn-primary text-l" >
+                                <a href={getCurrentCvLenguaje()} target="_blank" className="no-animation rounded-none btn btn-outline btn-primary text-lg" >
                                     {t('hero.resume')}
                                 </a>
                             </div>

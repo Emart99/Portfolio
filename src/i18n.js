@@ -27,7 +27,7 @@ const resources = {
          "paragraph2Start": "My preferred programming language is ",
          "paragraph2Java":"Java ",
          "paragraph2Middle":"along with the",
-         "paragraph2Spring":" Spring ecosistem",
+         "paragraph2Spring":" Spring ecosystem",
          "paragraph2End":", although I also really enjoy programming with",
          "paragraph2Typescript":" Typescript",
          "paragraph3":"I am passionate about music, especially jazz. In my free time, I like to play my old Yamaha Pacifica 921.",

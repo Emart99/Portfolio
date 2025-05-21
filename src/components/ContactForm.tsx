@@ -35,7 +35,7 @@ export default function ContactForm() {
                                 </span>
                                 <div className="relative grow ">
                                     <input type="text" placeholder="John Doe" className="input input-filled peer " name="name" id="name" required />
-                                    <label className="input-filled-label" htmlFor="full-name">{t('contactMe.name')}</label>
+                                    <label className="input-filled-label text-lg" htmlFor="full-name">{t('contactMe.name')}</label>
                                 </div>
                             </div>
                             <span className="input-filled-focused"></span>
@@ -48,7 +48,7 @@ export default function ContactForm() {
                                 </span>
                                 <div className="relative grow">
                                     <input type="text" placeholder="+22 13-3456-3456" className="input  input-filled peer rounded-none" name="telephone" id="telephone" required pattern="^[\+\(\s.\-\/\d\)]{5,30}$" />
-                                    <label className="input-filled-label " htmlFor="telephone" >{t('contactMe.phone')}</label>
+                                    <label className="input-filled-label text-lg" htmlFor="telephone" >{t('contactMe.phone')}</label>
                                 </div>
                             </div>
                             <span className="input-filled-focused"></span>
@@ -61,7 +61,7 @@ export default function ContactForm() {
                                 </span>
                                 <div className="relative grow">
                                     <input type="text" placeholder="johndoe@mail.com" className="input  input-filled peer rounded-none" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$" />
-                                    <label className="input-filled-label" htmlFor="email" >{t('contactMe.email')}</label>
+                                    <label className="input-filled-label text-lg" htmlFor="email" >{t('contactMe.email')}</label>
                                 </div>
                             </div>
                             <span className="input-filled-focused"></span>
@@ -74,7 +74,7 @@ export default function ContactForm() {
                                 </span>
                                 <div className="relative grow">
                                     <textarea className="h-40 border-b-0 hover:border-b-0  bg-inherit textarea textarea-filled peer rounded-none" placeholder={t('contactMe.enterMessage')} name="message" id="message" required ></textarea>
-                                    <label className="textarea-filled-label pl-3" htmlFor="message">{t('contactMe.message')}</label>
+                                    <label className="textarea-filled-label pl-3 text-lg" htmlFor="message">{t('contactMe.message')}</label>
                                 </div>
                             </div>
                             <span className="input-filled-focused"></span>
@@ -84,7 +84,7 @@ export default function ContactForm() {
                     </div>
 
                     <div className="text-end">
-                        <button type="submit" disabled={state.submitting} className="rounded-none btn btn-outline btn-primary px-4 font-xl rounded-md sm:mb-0">
+                        <button type="submit" disabled={state.submitting} className="rounded-none btn btn-outline btn-primary px-4 text-lg rounded-md sm:mb-0">
                             {t('contactMe.buttonSendMessage')}
                         </button>
                     </div>
