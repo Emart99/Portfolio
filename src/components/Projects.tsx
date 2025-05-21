@@ -50,10 +50,14 @@ export default function Projects() {
             style='intersect-once intersect:motion-preset-slide-up motion-delay-[700ms] motion-duration-1000'
             description={t('projects.portfolio')}
             imgUrl={portfolioImg}
-            tecnologies={[{ name: 'React', color: 'bg-blue-500', icon: 'icon-[mdi--react] bg-white' }, { name: 'TailwindCss', color: 'bg-blue-500', icon: 'icon-[mdi--tailwind]' }, { name: 'Flyonui', color: 'bg-violet-800', icon: 'icon-[arcticons--fly-delta]' }]}
-            repoUrl='https://github.com/Emart99/Portfolio'
-            buttonText={t('projects.codeButton')}
-            buttonIcon="icon-[line-md--github]"
+            tecnologies={[{ name: 'React', color: 'bg-blue-500', icon: 'icon-[mdi--react] bg-white' }, { name: 'TailwindCss', color: 'bg-blue-500', icon: 'icon-[mdi--tailwind]' }, { name: 'Flyonui', color: 'bg-violet-800', icon: 'icon-[arcticons--fly-delta]' },{ name: 'i18n', color: 'bg-blue-500', icon: 'icon-[simple-icons--i18next]' }]}
+            repoUrl='https://ezequiel-martino-portfolio.netlify.app/'
+            buttonText="Link"
+            buttonIcon="icon-[line-md--link]"
+            repoUrl2='https://github.com/Emart99/Portfolio'
+            buttonText2={t('projects.codeButton')}
+            buttonIcon2="icon-[line-md--github]"
+            
           />
           <Card projectName="CoolMetronome"
             style='intersect-once intersect:motion-preset-slide-up motion-delay-[800ms] motion-duration-1000'
