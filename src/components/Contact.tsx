@@ -3,6 +3,7 @@ import ContactForm from "./ContactForm";
 import ContactMeModal from "./ContactMeModal";
 import { motion } from "framer-motion";
 
+
 export default function Contact() {
     const { t } = useTranslation()
 

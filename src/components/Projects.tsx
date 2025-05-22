@@ -69,7 +69,7 @@ export default function Projects() {
           {t('projects.title')}
         </motion.h2>
         <motion.div
-          className="pb-3"
+          className="pb-6"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -88,7 +88,7 @@ export default function Projects() {
           </motion.div>
         </motion.div>
         <motion.div
-          className="pb-3"
+          className="pb-6"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -106,7 +106,7 @@ export default function Projects() {
           </motion.div>
         </motion.div>
         <motion.div
-          className="pb-3"
+          className="pb-6"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -124,7 +124,7 @@ export default function Projects() {
           </motion.div>
         </motion.div>
         <motion.div
-          className="pb-3"
+          className="pb-6"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -145,7 +145,7 @@ export default function Projects() {
           </motion.div>
         </motion.div>
         <motion.div
-          className="pb-3"
+          className="pb-6"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -163,7 +163,7 @@ export default function Projects() {
           </motion.div>
         </motion.div>
         <motion.div
-          className="pb-3"
+          className="pb-6"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -184,7 +184,7 @@ export default function Projects() {
           </motion.div>
         </motion.div>
         <motion.div
-          className="pb-3"
+          className="pb-6"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
