@@ -1,13 +1,13 @@
 import { useTranslation } from 'react-i18next'
 import { motion } from "framer-motion"
 import Card from './Card'
-import difficultImg from '../images/difficult.webp'
-import rampAppImg from '../images/rampapp.webp'
-import infDsbotImg from '../images/dsbot.webp'
-import portfolioImg from '../images/portfolio.webp'
-import metronomeImg from '../images/metronome.webp'
-import challengeImg from "../images/challenge.webp"
-import microserviceInitializrImg from "../images/microservice-initializr.webp"
+import difficultImg from '/difficult.webp?url'
+import rampAppImg from '/rampapp.webp?url'
+import infDsbotImg from '/dsbot.webp?url'
+import portfolioImg from '/portfolio.webp?url'
+import metronomeImg from '/metronome.webp?url'
+import challengeImg from "/challenge.webp?url"
+import microserviceInitializrImg from "/microservice-initializr.webp?url"
 
 export default function Projects() {
   const { t } = useTranslation()

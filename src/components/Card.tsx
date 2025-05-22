@@ -19,9 +19,9 @@ export default function Card(props: {
     return (
         <article className={"card rounded-none bg-transparent shadow-none  md:card-side sm:max-w-full "}>
             <figure className="shadow-sm relative w-full h-full md:w-1/2 h-60 shrink-0 overflow-hidden ">
-            <motion.a whileHover={{ scale: 1.05 }}>
+            <motion.div whileHover={{ scale: 1.05 }}>
                 <img className="rounded-sm h-initial overflow-clip " src={props.imgUrl} alt="img" />
-                </motion.a>
+                </motion.div>
             </figure>
             <div className="card-body py-3 px-0 md:pb-6 md:px-6 flex flex-col">
                 <div>

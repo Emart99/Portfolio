@@ -57,7 +57,7 @@ export default function ContactForm() {
     return (
         <>
             <h2 className="mb-4 text-5xl block lg:hidden font-bold pb-24 text-center lg:text-start">Contact Me</h2>
-            <form onSubmit={handleSubmit} id="contactForm">
+            <form onSubmit={handleSubmit} id="contactForm" autoComplete="false">
                 <div className="mb-6 w-[80%] m-auto rounded-lg ">
                     <motion.div className="mx-0 mb-1 sm:mb-6"
                         variants={containerVariants}

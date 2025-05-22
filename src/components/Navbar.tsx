@@ -64,10 +64,10 @@ export default function Navbar({switchTheme}: {switchTheme: () => void}) {
             aria-labelledby="dropdown-default"
           >
             <ul className="dropdown relative [--offset:9] [--placement:bottom-end] max-sm:[--placement:bottom]">
-              <li><a className="dropdown-item" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }} >{t('menu.home')}</a></li>
-              <li><a className="dropdown-item" onClick={(e) => { e.preventDefault(); scrollToSection('aboutme'); }} >{t('menu.about')}</a></li>
-              <li><a className="dropdown-item" onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }} >{t('menu.projects')}</a></li>
-              <li><a className="dropdown-item" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }} >{t('menu.contact')}</a></li>
+              <li><p className="dropdown-item" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }} >{t('menu.home')}</p></li>
+              <li><p className="dropdown-item" onClick={(e) => { e.preventDefault(); scrollToSection('aboutme'); }} >{t('menu.about')}</p></li>
+              <li><p className="dropdown-item" onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }} >{t('menu.projects')}</p></li>
+              <li><p className="dropdown-item" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }} >{t('menu.contact')}</p></li>
             </ul>
             <li className="dropdown relative [--offset:9] [--placement:bottom-end] max-sm:[--placement:bottom]">
               <button
@@ -96,10 +96,10 @@ export default function Navbar({switchTheme}: {switchTheme: () => void}) {
       </div>
       <div className="navbar-center max-sm:hidden">
         <ul className="menu font-medium menu-horizontal gap-1 p-0 text-base rtl:ml-20 bg-transparent text-lg">
-          <li><a className="dropdown-item" onClick={(e) => { e.preventDefault(); scrollToSection('home')}} >{t('menu.home')}</a></li>
-          <li><a className="dropdown-item" onClick={(e) => { e.preventDefault(); scrollToSection('aboutme')}}>{t('menu.about')}</a></li>
-          <li><a className="dropdown-item" onClick={(e) => { e.preventDefault(); scrollToSection('projects')}}>{t('menu.projects')}</a></li>
-          <li><a className="dropdown-item" onClick={(e) => { e.preventDefault(); scrollToSection('contact')}}>{t('menu.contact')}</a></li>
+          <li><p className="dropdown-item" onClick={(e) => { e.preventDefault(); scrollToSection('home')}} >{t('menu.home')}</p></li>
+          <li><p className="dropdown-item" onClick={(e) => { e.preventDefault(); scrollToSection('aboutme')}}>{t('menu.about')}</p></li>
+          <li><p className="dropdown-item" onClick={(e) => { e.preventDefault(); scrollToSection('projects')}}>{t('menu.projects')}</p></li>
+          <li><p className="dropdown-item" onClick={(e) => { e.preventDefault(); scrollToSection('contact')}}>{t('menu.contact')}</p></li>
           <li className="dropdown relative [--offset:9] [--placement:bottom-end] max-sm:[--placement:bottom]">
             <button
               id="dropdown-js-components"

@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import coffeeHero from "../images/coffeeHero.webp";
+import coffeeHero from "/coffeeHero.webp?url";
 
 export default function Hero() {
     const { t, i18n } = useTranslation()
@@ -98,7 +98,7 @@ export default function Hero() {
                                     className="w-auto text-center relative z-[1]  font-bold font-manrope text-5xl lg:text-left leading-[70px]"
                                     variants={fadeInLeft}
                                 >
-                                    Fullstack Developer
+                                    Web Developer
                                     <span className="from-primary absolute -start-0.5 bottom-1 -z-[1] h-0.5 w-full bg-gradient-to-r to-transparent to-80%" aria-hidden="true"></span>
                                 </motion.h1>
                             </div>

@@ -76,14 +76,14 @@ export default function Contact() {
                                     <div className="flex h-10 w-10 items-center gap-y-3 justify-center rounded bg-base-100">
                                         <span className="icon-[ic--sharp-email] bg-primary size-7"></span>
                                     </div>
-                                    <a className="ml-4 mb-4">
+                                    <div className="ml-4 mb-4">
                                         <h5 className="text-xl">
                                             Mail
                                         </h5>
                                         <p>
                                             ezequielmartino1999@gmail.com
                                         </p>
-                                    </a>
+                                    </div>
                                 </motion.li>
                                 <motion.li className="flex mb-2" variants={fadeInLeft}>
                                     <div className="flex h-10 w-10 items-center gap-y-3 justify-center rounded bg-base-100">
@@ -99,9 +99,6 @@ export default function Contact() {
                                     </a>
                                 </motion.li>
                                 <motion.li className="flex mb-2" variants={fadeInLeft}>
-                                    <a>
-
-                                    </a>
                                     <div className="flex h-10 w-10 items-center gap-y-3 justify-center rounded bg-base-100">
                                         <span className="icon-[uil--linkedin] bg-primary size-7"></span>
                                     </div>

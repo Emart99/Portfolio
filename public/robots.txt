@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ezequiel-martino-portfolio.netlify.app/sitemap.xml

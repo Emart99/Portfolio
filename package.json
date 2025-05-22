@@ -20,6 +20,7 @@
     "notyf": "^3.10.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-helmet-async": "^2.0.5",
     "react-i18next": "^15.2.0",
     "react-router-dom": "^6.20.0",
     "use-local-storage": "^3.0.0"
@@ -31,6 +32,7 @@
     "@types/node": "^22.7.5",
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.1",
+    "@types/react-helmet": "^6.1.11",
     "@vitejs/plugin-react": "^4.3.2",
     "autoprefixer": "^10.4.14",
     "eslint": "^9.12.0",
