@@ -42,7 +42,8 @@ export default function Navbar({switchTheme}: {switchTheme: () => void}) {
 
 
   return (
-    <nav className={`navbar fixed top-0 z-[9] backdrop-blur  ${isSticky ? 'shadow bg-base-200/50' : 'bg-transparent'}`}>
+    <nav className={`navbar fixed top-0  z-[9] backdrop-blur  ${isSticky ? 'shadow bg-base-200/50' : 'bg-transparent'}`}>
+      
       <div className="navbar-start">
         <div className="dropdown relative inline-flex sm:hidden rtl:[--placement:bottom-end]">
           <button
@@ -94,7 +95,7 @@ export default function Navbar({switchTheme}: {switchTheme: () => void}) {
           </ul>
         </div>
       </div>
-      <div className="navbar-center max-sm:hidden">
+      <div className="navbar-center max-sm:hidden ">
         <ul className="menu font-medium menu-horizontal gap-1 p-0 text-base rtl:ml-20 bg-transparent text-lg">
           <li><a className="dropdown-item" onClick={(e) => { e.preventDefault(); scrollToSection('home')}} >{t('menu.home')}</a></li>
           <li><a className="dropdown-item" onClick={(e) => { e.preventDefault(); scrollToSection('aboutme')}}>{t('menu.about')}</a></li>
