@@ -38,7 +38,7 @@ export default function Contact() {
 
 
     return (
-        <section id="contact" className="contact lg:flex lg:items-center md:pl-8 lg:mb-none mb-8">
+        <section id="contact" className="contact lg:flex lg:items-center lg:mb-none mb-8">
             <div className="mx-0  lg:mx-auto  max-w-7xl px-4 sm:px-5 lg:px-10">
                 <motion.h2
                     className="font-heading mb-24 font-bold tracking-tight text-center lg:text-start text-5xl pt-16"
