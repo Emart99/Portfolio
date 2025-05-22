@@ -40,7 +40,7 @@ function App() {
         <meta name="description" content="Portfolio of Ezequiel Martino, a web developer specialized in React, TailwindCSS, Java and Springboot." />
         <meta name="keywords" content="Ezequiel Martino, web developer, React, TailwindCSS, Java, microservices, portfolio, programming" />
         <meta name="author" content="Ezequiel Martino" />
-        <meta name="google-site-verification" content='googleb2a491ab6149fad3.html'/>
+        <meta name="google-site-verification" content="zV-Xhvdf5qck8llvC8hZy84UYU9mUobkxEZhKrTmKf4" />
         <meta property="og:title" content="Ezequiel Martino Portfolio" />
         <meta property="og:description" content="Check out my projects built with React, TailwindCSS, Java, and more." />
         <meta property="og:image" content={portfolioPreview} />
