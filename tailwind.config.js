@@ -11,8 +11,6 @@ export default {
      require('flyonui'),
      require('flyonui/plugin'),
      addDynamicIconSelectors(),
-     require('tailwindcss-motion'),
-     require('tailwindcss-intersect') 
     ],
   theme: {
     extend: {

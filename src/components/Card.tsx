@@ -6,7 +6,6 @@ export default function Card(props: {
     imgUrl: string,
     tecnologies: tecnologie[],
     repoUrl: string,
-    style: string,
     buttonIcon: string,
     buttonText: string
     buttonText2?: string,
@@ -17,7 +16,7 @@ export default function Card(props: {
 }) {
 
     return (
-        <article className={"card rounded-none bg-transparent shadow-none  md:card-side sm:max-w-full " + props.style}>
+        <article className={"card rounded-none bg-transparent shadow-none  md:card-side sm:max-w-full "}>
             <figure className="shadow-sm relative w-full h-full md:w-1/2 h-60 shrink-0 overflow-hidden ">
                 <img className="rounded-sm h-initial overflow-clip " src={props.imgUrl} alt="img" />
             </figure>

@@ -96,7 +96,7 @@ export default function Contact() {
                             </ul>
                         </div>
 
-                        <div className=" max-w-6xl hidden lg:block  intersect:motion-preset-slide-left motion-duration-1500 intersect-once" id="form">
+                        <div className=" max-w-6xl hidden lg:block" id="form">
                             <ContactForm />
                         </div>
                     </div>
