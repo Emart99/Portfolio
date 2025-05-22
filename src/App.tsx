@@ -37,7 +37,6 @@ function App() {
     <HelmetProvider>
       <Helmet>
         <title>Ezequiel Martino | Web Developer</title>
-        <meta name="google-site-verification" content="zV-Xhvdf5qck8llvC8hZy84UYU9mUobkxEZhKrTmKf4" />
         <meta name="description" content="Portfolio of Ezequiel Martino, a web developer specialized in React, TailwindCSS, Java and Springboot." />
         <meta name="keywords" content="Ezequiel Martino, web developer, React, TailwindCSS, Java, microservices, portfolio, programming" />
         <meta name="author" content="Ezequiel Martino" />
