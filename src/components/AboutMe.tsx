@@ -84,7 +84,7 @@ export default function AboutMe() {
         </motion.h2>
         
         <div className="container mx-auto">
-          <motion.div 
+          <motion.div
             className="flex flex-col-reverse md:flex-row"
             variants={containerVariants}
             initial="hidden"
