@@ -6,7 +6,6 @@ import 'notyf/notyf.min.css';
 import ObserverProvider from './components/ObserverProvider';
 import  useLocalStorage  from 'use-local-storage';
 import { HelmetProvider,Helmet } from 'react-helmet-async';
-import portfolioPreview from "/portfolio-preview.webp?url"
 declare global {
   interface Window {
     HSStaticMethods: IStaticMethods;
@@ -42,8 +41,8 @@ function App() {
         <meta name="author" content="Ezequiel Martino" />
         <meta property="og:title" content="Ezequiel Martino Portfolio" />
         <meta property="og:description" content="Check out my projects built with React, TailwindCSS, Java, and more." />
-        <meta property="og:image" content={portfolioPreview} />
-        <meta property="og:url" content="https://ezequiel-martino-portfolio.netlify.app/" />
+        <meta property="og:image" content="/portfolio-preview.webp?url" />
+        <meta property="og:url" content="https://ezequiel-martino-portfolio.netlify.app/portfolio-preview.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <html lang="en" />
