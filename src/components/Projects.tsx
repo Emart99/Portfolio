@@ -8,6 +8,7 @@ import portfolioImg from '/portfolio.webp?url'
 import metronomeImg from '/metronome.webp?url'
 import challengeImg from "/challenge.webp?url"
 import microserviceInitializrImg from "/microservice-initializr.webp?url"
+import infamyClash from "/infamy-clash.webp?url"
 
 export default function Projects() {
   const { t } = useTranslation()
@@ -180,6 +181,27 @@ export default function Projects() {
               buttonText2={t('projects.codeButton')}
               buttonIcon2="icon-[line-md--github]"
               repoUrl2="https://github.com/Emart99/desafio-sinergia-creativa"
+            />
+          </motion.div>
+        </motion.div>
+        <motion.div
+          className="pb-6"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+        >
+          <motion.div variants={fadeInUp}>
+            <Card projectName="iNFAMY Clash"
+              description={t('projects.iNFAMY-Clash')}
+              imgUrl={infamyClash}
+              tecnologies={[{ name: 'React', color: 'bg-black', icon: 'icon-[mdi--react] bg-white' }, { name: 'TailwindCss', color: 'bg-blue-500', icon: 'icon-[mdi--tailwind]' }]}
+              repoUrl='https://infamy-clash.netlify.app/'
+              buttonIcon="icon-[line-md--link]"
+              buttonText="Link"
+              buttonText2={t('projects.codeButton')}
+              buttonIcon2="icon-[line-md--github]"
+              repoUrl2="https://github.com/Emart99/infamy-coc"
             />
           </motion.div>
         </motion.div>

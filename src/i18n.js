@@ -44,6 +44,7 @@ const resources = {
         "metronome":"A customizable metronome web app built with React and styled using TailwindCSS. It offers advanced features such as BPM search for songs powered by getsongbpm api, the ability to import settings via JSON files or raw JSON text, and several quality-of-life tools.",
         "codeButton": "Source Code",
         "spring-microservice":"A web app built with React and styled using TailwindCSS that leverages Xyflow to manage nodes and connections. It allows users to design their microservice architecture visually and export the configuration to generate the skeleton files for the entire project, streamlining the initial setup process. Work in progress",
+        "iNFAMY-Clash": "A dedicated team website for the iNFAMY Clash of Clans team, built to showcase team members, track clan statistics, and recruit new players. The site features team rosters, member profiles, clan war records. It uses ClashKingApi."
         
       },
       "contactMe":{
@@ -110,6 +111,7 @@ const resources = {
         "metronome":"Un metrónomo web personalizable desarrollada con React y estilizada con TailwindCSS. Ofrece funciones como la búsqueda de BPM de canciones mediante la API de GetSongBPM, la posibilidad de importar configuraciones mediante archivos JSON o texto JSON, y varias herramientas de calidad de vida.",
         "codeButton": "Código Fuente",
         "spring-microservice":"Una aplicación web desarrollada con React y estilizada con TailwindCSS que utiliza Xyflow para gestionar nodos y conexiones. Permite a los usuarios diseñar visualmente su arquitectura de microservicios y exportar la configuración para generar los archivos base de todo el proyecto, facilitando el proceso inicial de configuración.",
+        "iNFAMY-Clash": "Un sitio web dedicado al equipo iNFAMY de Clash of Clans, creado para mostrar a los miembros del equipo, rastrear estadísticas del clan y reclutar nuevos jugadores. El sitio incluye listas de equipos, perfiles de miembros y registros de guerras de clanes. Utiliza ClashKingApi."
       },
       "contactMe":{
          "title":"Contactemos",
