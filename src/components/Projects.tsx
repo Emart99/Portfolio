@@ -191,19 +191,7 @@ export default function Projects() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
         >
-          <motion.div variants={fadeInUp}>
-            <Card projectName="iNFAMY Clash"
-              description={t('projects.iNFAMY-Clash')}
-              imgUrl={infamyClash}
-              tecnologies={[{ name: 'React', color: 'bg-black', icon: 'icon-[mdi--react] bg-white' }, { name: 'TailwindCss', color: 'bg-blue-500', icon: 'icon-[mdi--tailwind]' }]}
-              repoUrl='https://infamy-clash.netlify.app/'
-              buttonIcon="icon-[line-md--link]"
-              buttonText="Link"
-              buttonText2={t('projects.codeButton')}
-              buttonIcon2="icon-[line-md--github]"
-              repoUrl2="https://github.com/Emart99/infamy-coc"
-            />
-          </motion.div>
+          
         </motion.div>
         <motion.div
           className="pb-6"
