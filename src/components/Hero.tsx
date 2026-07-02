@@ -7,9 +7,9 @@ export default function Hero() {
     
     const getCurrentCvLenguaje = () => {
         if (i18n.language === "es") {
-            return ("https://drive.google.com/file/d/1rqksQ0pe6PdE1U6incBKpI7sZr2n5a7t/view?usp=sharing")
+            return ("https://drive.google.com/file/d/15AGS9Csdy2SHQfICKlDV4jUPyANVfCb0/view?usp=sharing")
         } else {
-            return ("https://drive.google.com/file/d/1sPYYAUjWVTm8w7_ESW5QDwaviuedKslc/view?usp=sharing")
+            return ("https://drive.google.com/file/d/1DjJdelg9zy9gFhBbBjjMT4twvRYdU7eb/view?usp=sharing")
         }
     }
 
@@ -98,7 +98,7 @@ export default function Hero() {
                                     className="w-auto text-center relative z-[1]  font-bold font-manrope text-5xl lg:text-left leading-[70px]"
                                     variants={fadeInLeft}
                                 >
-                                    Web Developer
+                                    Software Developer 
                                     <span className="from-primary absolute -start-0.5 bottom-1 -z-[1] h-0.5 w-full bg-gradient-to-r to-transparent to-80%" aria-hidden="true"></span>
                                 </motion.h1>
                             </div>
