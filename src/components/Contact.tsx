@@ -53,17 +53,17 @@ export default function Contact() {
                 <div className="flex items-start md:items-stretch justify-center  ">
                     <div className="grid lg:grid-cols-2">
                         <motion.div className="content-baseline  h-full w-full md:w-[50vw]">
-                            <motion.ul className="mb-6 md:mb-0"
+                            <motion.ul className="mb-6 md:mb-0 space-y-8"
                                 variants={containerVariants}
                                 initial="hidden"
                                 whileInView="visible"
                                 viewport={{ once: true, amount: 0.2 }}>
 
-                                <motion.li className="flex mb-2" variants={fadeInLeft}>
+                                <motion.li className="flex" variants={fadeInLeft}>
                                     <div className="flex h-10 w-10 items-center gap-y-3 justify-center rounded bg-base-100">
                                         <span className="icon-[mdi--contact] size-7 bg-primary"></span>
                                     </div>
-                                    <div className="ml-4 mb-4">
+                                    <div className="ml-4">
                                         <h5 className="text-xl">
                                             {t('contactMe.mobile')}
                                         </h5>
@@ -72,11 +72,11 @@ export default function Contact() {
                                         </p>
                                     </div>
                                 </motion.li>
-                                <motion.li className="flex mb-2" variants={fadeInLeft}>
+                                <motion.li className="flex" variants={fadeInLeft}>
                                     <div className="flex h-10 w-10 items-center gap-y-3 justify-center rounded bg-base-100">
                                         <span className="icon-[ic--sharp-email] bg-primary size-7"></span>
                                     </div>
-                                    <div className="ml-4 mb-4">
+                                    <div className="ml-4">
                                         <h5 className="text-xl">
                                             Mail
                                         </h5>
@@ -85,11 +85,11 @@ export default function Contact() {
                                         </p>
                                     </div>
                                 </motion.li>
-                                <motion.li className="flex mb-2" variants={fadeInLeft}>
+                                <motion.li className="flex" variants={fadeInLeft}>
                                     <div className="flex h-10 w-10 items-center gap-y-3 justify-center rounded bg-base-100">
                                         <span className="icon-[mdi--github] bg-primary size-7"></span>
                                     </div>
-                                    <a href="https://www.github.com/Emart99" target="_blank" className="ml-4 mb-4">
+                                    <a href="https://www.github.com/Emart99" target="_blank" className="ml-4">
                                         <h5 className="text-xl">
                                             Github
                                         </h5>
@@ -98,11 +98,11 @@ export default function Contact() {
                                         </p>
                                     </a>
                                 </motion.li>
-                                <motion.li className="flex mb-2" variants={fadeInLeft}>
+                                <motion.li className="flex" variants={fadeInLeft}>
                                     <div className="flex h-10 w-10 items-center gap-y-3 justify-center rounded bg-base-100">
                                         <span className="icon-[uil--linkedin] bg-primary size-7"></span>
                                     </div>
-                                    <a href="https://www.linkedin.com/in/martino-ezequiel/" target="_blank" className="ml-4 mb-4">
+                                    <a href="https://www.linkedin.com/in/martino-ezequiel/" target="_blank" className="ml-4">
                                         <h5 className="text-xl">
                                             LinkedIn
                                         </h5>
@@ -111,11 +111,11 @@ export default function Contact() {
                                         </p>
                                     </a>
                                 </motion.li>
-                                <motion.li className="flex mb-10 lg:mb-0" variants={fadeInLeft}>
+                                <motion.li className="flex" variants={fadeInLeft}>
                                     <div className="flex h-10 w-10 items-center gap-y-3 justify-center rounded bg-base-100">
                                         <span className="icon-[mdi--location] bg-primary size-7"></span>
                                     </div>
-                                    <div className="ml-4 mb-4">
+                                    <div className="ml-4">
                                         <h5 className="text-xl">
                                             {t('contactMe.location')}
                                         </h5>

@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import { motion } from "framer-motion"
 import Card from './Card'
+import tramoImg from '/tramo.webp?url'
 import difficultImg from '/difficult.webp?url'
 import rampAppImg from '/rampapp.webp?url'
 import infDsbotImg from '/dsbot.webp?url'
@@ -8,7 +9,6 @@ import portfolioImg from '/portfolio.webp?url'
 import metronomeImg from '/metronome.webp?url'
 import challengeImg from "/challenge.webp?url"
 import microserviceInitializrImg from "/microservice-initializr.webp?url"
-import infamyClash from "/infamy-clash.webp?url"
 
 export default function Projects() {
   const { t } = useTranslation()
@@ -69,6 +69,28 @@ export default function Projects() {
         >
           {t('projects.title')}
         </motion.h2>
+        <motion.div
+          className="pb-6"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+        >
+          <motion.div variants={fadeInUp}>
+            <Card
+              projectName="Tramo"
+              description={t('projects.tramo')}
+              imgUrl={tramoImg}
+              tecnologies={[{ name: 'Next.js', color: 'bg-black', icon: 'icon-[simple-icons--nextdotjs]' }, { name: 'React', color: 'bg-blue-500', icon: 'icon-[mdi--react] bg-white' }, { name: 'TypeScript', color: 'bg-blue-600', icon: 'icon-[mdi--language-typescript]' }, { name: 'TailwindCss', color: 'bg-blue-500', icon: 'icon-[mdi--tailwind]' }, { name: 'Java', color: 'bg-red-500', icon: 'icon-[ri--java-fill]' }, { name: 'SpringBoot', color: 'bg-green-500', icon: 'icon-[simple-icons--springboot]' }, { name: 'PostgreSQL', color: 'bg-blue-500', icon: 'icon-[simple-icons--postgresql]' }]}
+              repoUrl='https://github.com/tramodev/tramo-frontend'
+              buttonText={t('projects.frontendButton')}
+              buttonIcon="icon-[line-md--github]"
+              repoUrl2='https://github.com/tramodev/tramo-api'
+              buttonText2={t('projects.apiButton')}
+              buttonIcon2="icon-[line-md--github]"
+            />
+          </motion.div>
+        </motion.div>
         <motion.div
           className="pb-6"
           variants={containerVariants}
@@ -183,15 +205,6 @@ export default function Projects() {
               repoUrl2="https://github.com/Emart99/desafio-sinergia-creativa"
             />
           </motion.div>
-        </motion.div>
-        <motion.div
-          className="pb-6"
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.1 }}
-        >
-          
         </motion.div>
         <motion.div
           className="pb-6"

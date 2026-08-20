@@ -43,6 +43,9 @@ const resources = {
         "challenge":"A mobile-only web app built with React and styled using TailwindCSS. It utilizes data sourced from spreadsheets and offers a smooth user experience optimized for mobile devices.",
         "metronome":"A customizable metronome web app built with React and styled using TailwindCSS. It offers advanced features such as BPM search for songs powered by getsongbpm api, the ability to import settings via JSON files or raw JSON text, and several quality-of-life tools.",
         "codeButton": "Source Code",
+        "frontendButton": "Frontend",
+        "apiButton": "API",
+        "tramo":"A tool for capturing ideas as an associative graph and then carving ordered, shareable paths through them, a modern take on Vannevar Bush's Memex. Built with Next.js and React on the front and Spring Boot on the back, it features a Lexical rich-text editor with KaTeX math, an interactive knowledge graph powered by Xyflow, Google sign-in and a public explore feed where projects can be published and forked.",
         "spring-microservice":"A web app built with React and styled using TailwindCSS that leverages Xyflow to manage nodes and connections. It allows users to design their microservice architecture visually and export the configuration to generate the skeleton files for the entire project, streamlining the initial setup process. Work in progress",
         "iNFAMY-Clash": "A dedicated team website for the iNFAMY Clash of Clans team, built to showcase team members, track clan statistics, and recruit new players. The site features team rosters, member profiles, clan war records. It uses ClashKingApi."
         
@@ -110,6 +113,9 @@ const resources = {
         "challenge":"Una aplicación web exclusiva para móviles, desarrollada con React y estilizada con TailwindCSS. Utiliza datos provenientes de hojas de cálculo y ofrece una experiencia de usuario fluida, optimizada para dispositivos móviles.",
         "metronome":"Un metrónomo web personalizable desarrollada con React y estilizada con TailwindCSS. Ofrece funciones como la búsqueda de BPM de canciones mediante la API de GetSongBPM, la posibilidad de importar configuraciones mediante archivos JSON o texto JSON, y varias herramientas de calidad de vida.",
         "codeButton": "Código Fuente",
+        "frontendButton": "Frontend",
+        "apiButton": "API",
+        "tramo":"Una herramienta para capturar ideas como un grafo asociativo y luego trazar recorridos ordenados y compartibles sobre él, una relectura moderna del Memex de Vannevar Bush. Desarrollada con Next.js y React en el frontend y Spring Boot en el backend, incluye un editor de texto enriquecido con Lexical y fórmulas con KaTeX, un grafo de conocimiento interactivo con Xyflow, inicio de sesión con Google y un feed público donde los proyectos se pueden publicar y forkear.",
         "spring-microservice":"Una aplicación web desarrollada con React y estilizada con TailwindCSS que utiliza Xyflow para gestionar nodos y conexiones. Permite a los usuarios diseñar visualmente su arquitectura de microservicios y exportar la configuración para generar los archivos base de todo el proyecto, facilitando el proceso inicial de configuración.",
         "iNFAMY-Clash": "Un sitio web dedicado al equipo iNFAMY de Clash of Clans, creado para mostrar a los miembros del equipo, rastrear estadísticas del clan y reclutar nuevos jugadores. El sitio incluye listas de equipos, perfiles de miembros y registros de guerras de clanes. Utiliza ClashKingApi."
       },
