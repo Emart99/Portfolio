@@ -1,11 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import { motion } from "framer-motion"
 import Card from './Card'
-import tramoImg from '/tramo.webp?url'
 import tramoEditorImg from '/tramo-editor.webp?url'
-import tramoExploreImg from '/tramo-explore.webp?url'
-import tramoProfileImg from '/tramo-profile.webp?url'
-import tramoLoginImg from '/tramo-login.webp?url'
 import rampAppImg from '/rampapp.webp?url'
 import infDsbotImg from '/dsbot.webp?url'
 import portfolioImg from '/portfolio.webp?url'
@@ -15,8 +11,6 @@ import microserviceInitializrImg from "/microservice-initializr.webp?url"
 
 export default function Projects() {
   const { t } = useTranslation()
-
-  const tramoShots = [tramoEditorImg, tramoExploreImg, tramoProfileImg, tramoLoginImg]
 
   const tramoStack = [
     { name: 'Next.js', icon: 'icon-[simple-icons--nextdotjs]' },
@@ -89,43 +83,29 @@ export default function Projects() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
         >
-          <motion.div variants={fadeInUp} className="flex items-center gap-4 mb-6">
-            <span className="text-primary text-sm uppercase tracking-[0.3em]">{t('projects.featured')}</span>
-            <span className="h-px grow bg-primary/30"></span>
-          </motion.div>
-
-          <div className="lg:flex lg:items-end lg:gap-10 mb-8">
-            <motion.div variants={fadeInUp} className="lg:w-1/2">
-              <h3 className="font-heading font-bold text-6xl mb-3">Tramo</h3>
-              <p className="text-2xl text-base-content/70">{t('projects.tramoTagline')}</p>
-            </motion.div>
-            <motion.div variants={fadeInUp} className="lg:w-1/2 mt-6 lg:mt-0">
-              <p className="text-xl">{t('projects.tramo')}</p>
-              <div className="inline-flex flex-wrap items-center gap-2 mt-4">
+          <div className="grid lg:grid-cols-[340px_1fr] border-t-2 border-base-content">
+            <motion.div variants={fadeInUp} className="lg:pr-8 py-8 lg:border-r border-base-content/15">
+              <span className="font-mono text-sm text-primary tracking-[0.2em]">{t('projects.featured').toUpperCase()}</span>
+              <h3 className="font-heading font-bold text-5xl mt-3.5 mb-2 tracking-tight leading-none">Tramo</h3>
+              <p className="text-lg text-base-content/70 leading-snug">{t('projects.tramoTagline')}</p>
+              <div className="flex flex-col gap-2.5 border-t border-base-content/15 pt-5 mt-7">
                 {tramoStack.map((tecnology, index) => (
-                  <div key={index} className="rounded-sm p-1.5 flex gap-2 bg-primary text-white items-center">
-                    <span className={`${tecnology.icon} size-4`}></span>
-                    <p className="text-md">{tecnology.name}</p>
+                  <div key={index} className="flex items-center gap-2.5 text-base">
+                    <span className={`${tecnology.icon} text-primary size-4`}></span>
+                    <p>{tecnology.name}</p>
                   </div>
                 ))}
               </div>
-              <div className="flex gap-2 mt-6">
+              <div className="flex flex-col gap-2 mt-7">
                 <a target="_blank" href="https://github.com/tramodev/tramo-frontend" className="text-lg btn btn-outline btn-primary rounded-none"><span className="icon-[line-md--github]"></span> {t('projects.frontendButton')}</a>
                 <a target="_blank" href="https://github.com/tramodev/tramo-api" className="text-lg btn btn-outline btn-primary rounded-none"><span className="icon-[line-md--github]"></span> {t('projects.apiButton')}</a>
               </div>
             </motion.div>
+            <motion.div variants={fadeInUp} className="lg:pl-8 py-8">
+              <p className="text-xl leading-relaxed max-w-3xl mb-6">{t('projects.tramo')}</p>
+              <img className="w-full shadow-sm rounded-xl" src={tramoEditorImg} alt="Tramo" />
+            </motion.div>
           </div>
-
-          <motion.div variants={fadeInUp} className="overflow-hidden rounded-sm shadow-sm">
-            <img className="w-full" src={tramoImg} alt="Tramo" />
-          </motion.div>
-          <motion.div variants={fadeInUp} className="grid grid-cols-2 lg:grid-cols-4 gap-3 mt-3">
-            {tramoShots.map((shot, index) => (
-              <div key={index} className="overflow-hidden rounded-sm shadow-sm">
-                <motion.img whileHover={{ scale: 1.05 }} className="w-full" src={shot} alt="Tramo" />
-              </div>
-            ))}
-          </motion.div>
         </motion.div>
         <motion.div
           className="pb-6"
