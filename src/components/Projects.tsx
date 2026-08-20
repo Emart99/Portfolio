@@ -2,7 +2,10 @@ import { useTranslation } from 'react-i18next'
 import { motion } from "framer-motion"
 import Card from './Card'
 import tramoImg from '/tramo.webp?url'
-import difficultImg from '/difficult.webp?url'
+import tramoEditorImg from '/tramo-editor.webp?url'
+import tramoExploreImg from '/tramo-explore.webp?url'
+import tramoProfileImg from '/tramo-profile.webp?url'
+import tramoLoginImg from '/tramo-login.webp?url'
 import rampAppImg from '/rampapp.webp?url'
 import infDsbotImg from '/dsbot.webp?url'
 import portfolioImg from '/portfolio.webp?url'
@@ -12,6 +15,16 @@ import microserviceInitializrImg from "/microservice-initializr.webp?url"
 
 export default function Projects() {
   const { t } = useTranslation()
+
+  const tramoShots = [tramoEditorImg, tramoExploreImg, tramoProfileImg, tramoLoginImg]
+
+  const tramoStack = [
+    { name: 'Next.js', icon: 'icon-[simple-icons--nextdotjs]' },
+    { name: 'React', icon: 'icon-[mdi--react] bg-white' },
+    { name: 'Java', icon: 'icon-[ri--java-fill]' },
+    { name: 'SpringBoot', icon: 'icon-[simple-icons--springboot]' },
+    { name: 'PostgreSQL', icon: 'icon-[simple-icons--postgresql]' },
+  ]
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -70,25 +83,48 @@ export default function Projects() {
           {t('projects.title')}
         </motion.h2>
         <motion.div
-          className="pb-6"
+          className="pb-20"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
         >
-          <motion.div variants={fadeInUp}>
-            <Card
-              projectName="Tramo"
-              description={t('projects.tramo')}
-              imgUrl={tramoImg}
-              tecnologies={[{ name: 'Next.js', color: 'bg-black', icon: 'icon-[simple-icons--nextdotjs]' }, { name: 'React', color: 'bg-blue-500', icon: 'icon-[mdi--react] bg-white' }, { name: 'TypeScript', color: 'bg-blue-600', icon: 'icon-[mdi--language-typescript]' }, { name: 'TailwindCss', color: 'bg-blue-500', icon: 'icon-[mdi--tailwind]' }, { name: 'Java', color: 'bg-red-500', icon: 'icon-[ri--java-fill]' }, { name: 'SpringBoot', color: 'bg-green-500', icon: 'icon-[simple-icons--springboot]' }, { name: 'PostgreSQL', color: 'bg-blue-500', icon: 'icon-[simple-icons--postgresql]' }]}
-              repoUrl='https://github.com/tramodev/tramo-frontend'
-              buttonText={t('projects.frontendButton')}
-              buttonIcon="icon-[line-md--github]"
-              repoUrl2='https://github.com/tramodev/tramo-api'
-              buttonText2={t('projects.apiButton')}
-              buttonIcon2="icon-[line-md--github]"
-            />
+          <motion.div variants={fadeInUp} className="flex items-center gap-4 mb-6">
+            <span className="text-primary text-sm uppercase tracking-[0.3em]">{t('projects.featured')}</span>
+            <span className="h-px grow bg-primary/30"></span>
+          </motion.div>
+
+          <div className="lg:flex lg:items-end lg:gap-10 mb-8">
+            <motion.div variants={fadeInUp} className="lg:w-1/2">
+              <h3 className="font-heading font-bold text-6xl mb-3">Tramo</h3>
+              <p className="text-2xl text-base-content/70">{t('projects.tramoTagline')}</p>
+            </motion.div>
+            <motion.div variants={fadeInUp} className="lg:w-1/2 mt-6 lg:mt-0">
+              <p className="text-xl">{t('projects.tramo')}</p>
+              <div className="inline-flex flex-wrap items-center gap-2 mt-4">
+                {tramoStack.map((tecnology, index) => (
+                  <div key={index} className="rounded-sm p-1.5 flex gap-2 bg-primary text-white items-center">
+                    <span className={`${tecnology.icon} size-4`}></span>
+                    <p className="text-md">{tecnology.name}</p>
+                  </div>
+                ))}
+              </div>
+              <div className="flex gap-2 mt-6">
+                <a target="_blank" href="https://github.com/tramodev/tramo-frontend" className="text-lg btn btn-outline btn-primary rounded-none"><span className="icon-[line-md--github]"></span> {t('projects.frontendButton')}</a>
+                <a target="_blank" href="https://github.com/tramodev/tramo-api" className="text-lg btn btn-outline btn-primary rounded-none"><span className="icon-[line-md--github]"></span> {t('projects.apiButton')}</a>
+              </div>
+            </motion.div>
+          </div>
+
+          <motion.div variants={fadeInUp} className="overflow-hidden rounded-sm shadow-sm">
+            <img className="w-full" src={tramoImg} alt="Tramo" />
+          </motion.div>
+          <motion.div variants={fadeInUp} className="grid grid-cols-2 lg:grid-cols-4 gap-3 mt-3">
+            {tramoShots.map((shot, index) => (
+              <div key={index} className="overflow-hidden rounded-sm shadow-sm">
+                <motion.img whileHover={{ scale: 1.05 }} className="w-full" src={shot} alt="Tramo" />
+              </div>
+            ))}
           </motion.div>
         </motion.div>
         <motion.div
@@ -105,24 +141,6 @@ export default function Projects() {
               imgUrl={rampAppImg}
               tecnologies={[{ name: 'React Native', color: 'bg-blue-500', icon: 'icon-[tabler--brand-react-native]' }, { name: 'Paper', color: 'bg-indigo-600', icon: 'icon-[mdi--paper]' }, { name: 'Java', color: 'bg-red-500', icon: 'icon-[ri--java-fill]' }, { name: 'SpringBoot', color: 'bg-green-500', icon: 'icon-[simple-icons--springboot]' }, { name: 'MySQL', color: 'bg-blue-500', icon: 'icon-[lineicons--mysql]' }]}
               repoUrl='https://github.com/Emart99/RampApp'
-              buttonText={t('projects.codeButton')}
-              buttonIcon="icon-[line-md--github]"
-            />
-          </motion.div>
-        </motion.div>
-        <motion.div
-          className="pb-6"
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.1 }}
-        >
-          <motion.div variants={fadeInUp}>
-            <Card projectName="Difficult"
-              description={t('projects.difficult')}
-              imgUrl={difficultImg}
-              tecnologies={[{ name: 'React', color: 'bg-blue-500', icon: 'icon-[mdi--react] bg-white' }, { name: 'Bootstrap', color: 'bg-violet-900', icon: 'icon-[mdi--bootstrap]' }, { name: 'Kotlin', color: 'bg-red-500', icon: 'icon-[cib--kotlin]' }, { name: 'SpringBoot', color: 'bg-green-500', icon: 'icon-[simple-icons--springboot]' }, { name: 'MySQL', color: 'bg-blue-500', icon: 'icon-[lineicons--mysql]' }, { name: 'MongoDB', color: 'bg-green-500', icon: 'icon-[lineicons--mongodb]' }, { name: 'Redis', color: 'bg-red-500', icon: 'icon-[devicon-plain--redis]' }]}
-              repoUrl='https://github.com/Emart99/Difficult'
               buttonText={t('projects.codeButton')}
               buttonIcon="icon-[line-md--github]"
             />

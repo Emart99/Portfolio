@@ -37,7 +37,6 @@ const resources = {
       "projects": {
         "title": "Projects",
         "rampApp": "A mobile application developed with React Native that allows users to rent out their home parking spaces. The app connects parking spot owners with drivers looking for short-term or long-term parking solutions.",
-        "difficult": "A responsive e-commerce web application for selling flooring and paint products. It features six distinct views and was originally developed in Kotlin before being fully rewritten in Java.",
         "inf-dsBot": "A versatile bot developed using Java and the Discord4j library. It offers a range of features including music playback, open ai api commands, and custom commands to enhance server management.",
         "portfolio":"My portfolio, fully responsive built with React and styled using TailwindCSS. It features english and spanish support through i18n and smooth animations powered by Framer Motion.",
         "challenge":"A mobile-only web app built with React and styled using TailwindCSS. It utilizes data sourced from spreadsheets and offers a smooth user experience optimized for mobile devices.",
@@ -45,7 +44,9 @@ const resources = {
         "codeButton": "Source Code",
         "frontendButton": "Frontend",
         "apiButton": "API",
-        "tramo":"A tool for capturing ideas as an associative graph and then carving ordered, shareable paths through them, a modern take on Vannevar Bush's Memex. Built with Next.js and React on the front and Spring Boot on the back, it features a Lexical rich-text editor with KaTeX math, an interactive knowledge graph powered by Xyflow, Google sign-in and a public explore feed where projects can be published and forked.",
+        "tramo":"A tool for capturing ideas as an associative graph and then carving ordered, shareable paths through them, a modern take on Vannevar Bush's Memex. Built with Next.js and React on the front and Spring Boot on the back.",
+        "tramoTagline": "Organize learning as interconnected ideas, not isolated notes.",
+        "featured": "Featured",
         "spring-microservice":"A web app built with React and styled using TailwindCSS that leverages Xyflow to manage nodes and connections. It allows users to design their microservice architecture visually and export the configuration to generate the skeleton files for the entire project, streamlining the initial setup process. Work in progress",
         "iNFAMY-Clash": "A dedicated team website for the iNFAMY Clash of Clans team, built to showcase team members, track clan statistics, and recruit new players. The site features team rosters, member profiles, clan war records. It uses ClashKingApi."
         
@@ -107,7 +108,6 @@ const resources = {
         "projects": {
         "title": "Proyectos",
         "rampApp": "Una aplicación móvil desarrollada con React Native que permite a los usuarios alquilar los espacios de estacionamiento de sus hogares. La app conecta a propietarios de cocheras con conductores que buscan soluciones de estacionamiento a corto o largo plazo.",
-        "difficult": "Una aplicación web de e-comerse responsive para la venta de productos de pisos y pinturas. Cuenta con seis vistas diferentes y fue desarrollada originalmente en Kotlin, luego reescrita completamente en Java.",
         "inf-dsBot": "Un bot versátil desarrollado en Java utilizando la librería Discord4j. Ofrece una variedad de funciones, incluyendo reproducción de música, comandos con la API de OpenAI y comandos personalizados para mejorar la gestión del servidor.",
         "portfolio":"Mi portafolio completamente responsive, desarrollado con React y TailwindCSS. Incluye traducciones al español y al ingles con i18n y animaciones fluidas gracias a Framer Motion.",
         "challenge":"Una aplicación web exclusiva para móviles, desarrollada con React y estilizada con TailwindCSS. Utiliza datos provenientes de hojas de cálculo y ofrece una experiencia de usuario fluida, optimizada para dispositivos móviles.",
@@ -115,7 +115,9 @@ const resources = {
         "codeButton": "Código Fuente",
         "frontendButton": "Frontend",
         "apiButton": "API",
-        "tramo":"Una herramienta para capturar ideas como un grafo asociativo y luego trazar recorridos ordenados y compartibles sobre él, una relectura moderna del Memex de Vannevar Bush. Desarrollada con Next.js y React en el frontend y Spring Boot en el backend, incluye un editor de texto enriquecido con Lexical y fórmulas con KaTeX, un grafo de conocimiento interactivo con Xyflow, inicio de sesión con Google y un feed público donde los proyectos se pueden publicar y forkear.",
+        "tramo":"Una herramienta para capturar ideas como un grafo asociativo y luego trazar recorridos ordenados y compartibles sobre él, una relectura moderna del Memex de Vannevar Bush. Desarrollada con Next.js y Spring Boot.",
+        "tramoTagline": "Organizá el aprendizaje como ideas interconectadas, no como notas aisladas.",
+        "featured": "Destacado",
         "spring-microservice":"Una aplicación web desarrollada con React y estilizada con TailwindCSS que utiliza Xyflow para gestionar nodos y conexiones. Permite a los usuarios diseñar visualmente su arquitectura de microservicios y exportar la configuración para generar los archivos base de todo el proyecto, facilitando el proceso inicial de configuración.",
         "iNFAMY-Clash": "Un sitio web dedicado al equipo iNFAMY de Clash of Clans, creado para mostrar a los miembros del equipo, rastrear estadísticas del clan y reclutar nuevos jugadores. El sitio incluye listas de equipos, perfiles de miembros y registros de guerras de clanes. Utiliza ClashKingApi."
       },
